@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.35rem;
   color: #1b1b1b;
   background-color: #fff;
 }
@@ -238,7 +238,7 @@ nav ul li:hover::after, nav ul li a:hover::after {
   height: 180px;
   padding: 40px 40px;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   transition: all 0.3s;
 }
 #offer .service i {
@@ -647,7 +647,10 @@ footer.footer a:hover {
   color: #2869bf;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 990px) {
+  .header__text{
+    padding: 25px 15px;
+  }
   .nav-desktop {
     display: none;
   }
