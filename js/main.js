@@ -1,4 +1,4 @@
-
+//footer
 const yearInFooter = document.querySelector('.footer__year');
 const menuBtn = document.getElementById("menubtn");
 const sideNav = document.getElementById("sideNav");
@@ -26,7 +26,6 @@ const CurrentYear = () => {
 
 CurrentYear();
 
-
 const photo = document.querySelectorAll(".photo img")
 const popUp = document.querySelector(".popup")
 const popUpClose = document.querySelector(".popup__close")
@@ -35,7 +34,6 @@ const arrowLeft = document.querySelector(".popup__arrow--left")
 const arrowRight = document.querySelector(".popup__arrow--right")
 
 let currentImgIndex;
-
 
 const showNextImg = () => {
     if (currentImgIndex === photo.length - 1) {
@@ -96,18 +94,9 @@ document.addEventListener("keydown", (e) => {
         if (e.code === "ArrowRight" || e.keyCode === 39) {
             showNextImg();
         }
-
         if (e.code === "ArrowLeft" || e.keyCode === 37) {
             showPreviousImg();
         }
-        // if (e.code === "ArrowUp" || e.keyCode === 39) {
-        //     showNextImg();
-        // }
-
-        // if (e.code === "ArrowDown" || e.keyCode === 37) {
-        //     showPreviousImg();
-        // }
-
         if (e.code === "Escape" || e.keyCode === 27) {
             closePopup();
         }
