@@ -210,52 +210,72 @@ nav ul li:hover::after, nav ul li a:hover::after {
 }
 
 #offer {
-  font-weight: lighter;
-  background-color: rgba(144, 144, 144, 0.0980392157);
+  background-color: rgba(144, 144, 144, 0.1);
   padding: 100px 30px;
 }
-#offer .offer__text {
+
+.section-header {
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   color: #2869bf;
+  margin-bottom: 50px;
 }
-#offer .container {
+
+.offer-container {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 100px 8%;
+  padding: 0 8%;
 }
-#offer .row {
+
+.service-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: wrap row;
-  padding-bottom: 50px;
+  flex-wrap: wrap;
 }
-#offer .service {
+
+.service {
   width: 330px;
   height: 180px;
-  padding: 40px 40px;
+  padding: 40px;
   text-align: center;
-  font-size: 15px;
-  transition: all 0.3s;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
-#offer .service i {
-  font-size: 50px;
-  margin-bottom: 10px;
-  color: #2869bf;
-}
-#offer .service h2 {
+
+.service h2 {
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
-#offer .service:hover {
-  background: #2869bf;
+
+.service:hover {
+  background-color: #2869bf;
   color: #fff;
+  cursor: pointer;
 }
-#offer .service:hover i {
+
+.btn-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2869bf;
   color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #1f4f8a;
 }
 
 #about {
