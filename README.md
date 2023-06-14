@@ -6,3 +6,5 @@ Project start: 12.2022
 
 ## Screenshots:
 ![Screenshot](adentsiedlce.netlify.app_.png)
+
+bla bla
