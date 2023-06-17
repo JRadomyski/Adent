@@ -698,6 +698,9 @@ footer.footer a:hover {
   #about .box h2 {
     font-size: 1.3em;
   }
+  #testimonials{
+    padding: 100px 10px 150px 10px
+  }
   .lightbox {
     margin: 30px;
     padding: 30px;
