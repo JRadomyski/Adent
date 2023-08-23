@@ -89,7 +89,7 @@ h1.company-name {
     border: 1px solid #1b1b1b;
     border-radius: 8px;
     color: #1b1b1b;
-    font-size: 0.8em;
+    font-size: 1.1em;
     text-transform: uppercase;
     cursor: pointer;
     overflow: hidden;
@@ -223,6 +223,15 @@ nav ul li:hover::after, nav ul li a:hover::after {
     font-size: 1.6rem;
 }
 
+.scroll {
+    padding: 20px;
+}
+
+.scroll h1 {
+    padding: 20px 10px;
+    color: #2869bf;
+}
+
 .section-header {
     text-align: center;
     font-size: 24px;
@@ -308,7 +317,7 @@ nav ul li:hover::after, nav ul li a:hover::after {
     width: 40%;
     margin: auto;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 #about .general-info h2 {
@@ -318,7 +327,7 @@ nav ul li:hover::after, nav ul li a:hover::after {
 #testimonials {
     padding: 100px 10px 100px 10px;
     height: 60vh;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .slider {
@@ -727,7 +736,7 @@ footer.footer a:hover {
     }
 
     #testimonials {
-        padding: 100px 10px 150px 10px
+        padding: 100px 10px 150px 10px;
     }
 
     .lightbox {
