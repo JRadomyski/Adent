@@ -138,7 +138,6 @@ h1.company-name {
 .hamburger-desktop {
     display: none;
     position: fixed;
-    display: none;
 }
 
 #sideNav {
@@ -159,11 +158,9 @@ h1.company-name {
 nav ul li, nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px;
     text-transform: uppercase;
     position: relative;
     padding: 10px 20px;
-    text-decoration: none;
     list-style: none;
 }
 
@@ -238,7 +235,7 @@ nav ul li:hover::after, nav ul li a:hover::after {
     padding: 0 8%;
 }
 
-.service-row {
+.service-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,14 +255,13 @@ nav ul li:hover::after, nav ul li a:hover::after {
     margin: 10px;
 }
 
-.service h2 {
+.service h1, .service h2 {
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.service:hover {
-    background-color: #2869bf;
-    color: #fff;
+.service ul li:hover {
+    color: #2869bf;
     cursor: pointer;
 }
 
@@ -358,7 +354,7 @@ nav ul li:hover::after, nav ul li a:hover::after {
 }
 
 .slider__nav:checked:nth-of-type(1) ~ .slider__inner {
-    left: 0%;
+    left: 0;
 }
 
 .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
@@ -621,7 +617,7 @@ nav ul li:hover::after, nav ul li a:hover::after {
 }
 
 .contact__info > .info__box {
-    padding: 30px 0px;
+    padding: 30px 0;
 }
 
 .mail-box {
@@ -652,7 +648,6 @@ nav ul li:hover::after, nav ul li a:hover::after {
 }
 
 .info__button {
-    margin-top: 30px;
     display: flex;
     margin: auto;
     position: relative;
