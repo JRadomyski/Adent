@@ -328,27 +328,28 @@
             <br>
         </div>
         <div class="mail-box">
-            <form>
+            <form action="POST" data-netlify="true">
                 <div class="user-box">
-                    <input type="text" placeholder="Imię">
+                    <input type="text" name="Name" id="Name" placeholder="Imię">
                 </div>
                 <div class="user-box">
-                    <input type="text" placeholder="Nazwisko">
+                    <input type="text" name="Surname" id="Surname" placeholder="Nazwisko">
                 </div>
                 <div class="user-box">
-                    <input type="text" placeholder="Numer Telefonu">
+                    <input type="text" name="Phone" id="Phone" placeholder="Numer Telefonu">
                 </div>
                 <div class="user-box">
-                    <input type="email" placeholder="Email">
+                    <input type="email" name="Email" id="email" placeholder="Email">
                 </div>
 
                 <div class="user-box">
-                    <input type="text" placeholder="Wiadomość">
+                    <input type="text" name="Message" id="message" placeholder="Wiadomość">
                 </div>
                 <p style="font-size: 1.1rem">(Klikając „Wyślij” wyrażasz zgodę na przetwarzanie swoich danych osobowych
                     w celu skontaktowania się z nami.)</p>
+                <div data-netlify-recaptcha="true"></div>
                 <div class="btn">
-                    <button class="info__button">WYŚLIJ</button>
+                    <button class="info__button" type="submit" >WYŚLIJ</button>
                 </div>
             </form>
         </div>
