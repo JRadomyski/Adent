@@ -168,12 +168,6 @@ nav ul li, nav ul li a:hover {
     cursor: pointer;
 }
 
-nav ul li, nav ul li a,
-nav ul li::after, nav ul li a::after,
-nav ul li::before, nav ul li a::before {
-    transition: 0.3s;
-}
-
 nav ul li::after, nav ul li a::after {
     content: "";
     position: absolute;
@@ -518,33 +512,6 @@ nav ul li:hover::after, nav ul li a:hover::after {
     padding: 30px 0;
 }
 
-.mail-box {
-    padding-top: 50px;
-    margin: auto;
-    width: 50%;
-}
-
-.mail-box .user-box {
-    position: relative;
-}
-
-.mail-box .user-box input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #1b1b1b;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #1b1b1b;
-    outline: none;
-    background: transparent;
-    transition: border-bottom 0.3s ease;
-}
-
-.mail-box .user-box input:focus {
-    border-bottom: 1.5px solid #2869bf;
-}
-
 .info__button {
     display: flex;
     margin: auto;
@@ -630,11 +597,7 @@ footer.footer a:hover {
     }
 
     .contact {
-        padding: 100px 0px;
-    }
-
-    .mail-box {
-        width: 90%;
+        padding: 100px 0;
     }
 }
 
@@ -673,21 +636,13 @@ footer.footer a:hover {
         color: #1b1b1b;
         text-decoration: none;
         font-size: 20px;
-        padding: 10px;
         text-transform: uppercase;
         position: relative;
         padding: 10px 20px;
-        text-decoration: none;
     }
 
     .header .nav__link:hover {
         cursor: pointer;
-    }
-
-    .header .nav .link,
-    .header .nav .link::after,
-    .header .nav .link::before {
-        transition: 0.3s;
     }
 
     .header .nav__link::after {
