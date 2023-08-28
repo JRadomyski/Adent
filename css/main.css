@@ -151,9 +151,6 @@ h1.company-name {
     background-image: linear-gradient(to right, #ccccc2, #ccc);
 }
 
-#sideNav li:hover {
-    transition: all 0.5s ease;
-}
 
 nav ul li, nav ul li a {
     color: #fff;
@@ -162,28 +159,12 @@ nav ul li, nav ul li a {
     position: relative;
     padding: 10px 20px;
     list-style: none;
+    transition: all 0.3s ease;
 }
 
 nav ul li, nav ul li a:hover {
+    color: #2483ff;
     cursor: pointer;
-}
-
-nav ul li::after, nav ul li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 3px;
-    width: 100%;
-    background-color: #2869bf;
-    transition: transform 0.3s;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-nav ul li:hover::after, nav ul li a:hover::after {
-    transform: scaleX(1);
-    transform-origin: right;
 }
 
 #menubtn {
@@ -551,13 +532,6 @@ footer.footer a {
 
 footer.footer a:hover {
     color: #2869bf;
-}
-
-
-.error {
-    text-align: center;
-    margin: auto;
-    padding-top: 100px;
 }
 
 @media (max-width: 990px) {
