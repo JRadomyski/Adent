@@ -280,7 +280,7 @@ nav ul li, nav ul li a:hover {
     color: #fff;
 }
 
-#about .about__header {
+#about .section__header {
     margin: auto;
     padding: 50px;
     text-align: center;
@@ -296,7 +296,17 @@ nav ul li, nav ul li a:hover {
 }
 
 #about .general-info h2 {
-    color: #2869bf;
+    color: white;
+}
+
+#about .general-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#about .general-info ul li {
+    margin: 10px 0;
 }
 
 #gallery {
