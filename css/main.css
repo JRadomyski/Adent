@@ -271,13 +271,15 @@ nav ul li, nav ul li a:hover {
 }
 
 #about {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.495), rgb(98, 98, 98)), url("../img/foto (3).jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgb(98, 98, 98)), url("../img/foto (3).jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     padding: 100px 30px;
     color: #fff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);  /* cień wewnętrzny */
+    font-family: 'Arial', sans-serif;
 }
 
 #about .section__header {
@@ -285,6 +287,24 @@ nav ul li, nav ul li a:hover {
     padding: 50px;
     text-align: center;
     font-size: 3em;
+    position: relative;
+}
+
+#about .section__header::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #2869bf;
+    border-radius: 2px;
+}
+
+#about .section__header h1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 #about .general-info {
@@ -293,10 +313,18 @@ nav ul li, nav ul li a:hover {
     margin: auto;
     text-align: center;
     font-size: 1.1em;
+    position: relative;
 }
 
 #about .general-info h2 {
-    color: white;
+    color: #2869bf;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+    font-size: 1.2em;
+}
+
+#about .general-info h2:hover {
+    color: #1a4a8f;
 }
 
 #about .general-info ul {
@@ -307,6 +335,12 @@ nav ul li, nav ul li a:hover {
 
 #about .general-info ul li {
     margin: 10px 0;
+    transition: padding-left 0.3s, color 0.3s;
+}
+
+#about .general-info ul li:hover {
+    padding-left: 10px;
+    color: #2869bf;
 }
 
 #gallery {
@@ -532,7 +566,7 @@ footer {
     padding: 110px;
     height: 10vh;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 footer.footer a {
@@ -544,7 +578,7 @@ footer.footer a:hover {
     color: #2869bf;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1080px) {
     .header__text {
         padding: 25px 15px;
     }
@@ -653,5 +687,8 @@ footer.footer a:hover {
 
     .header #gallery {
         padding-top: 200px;
+    }
+    #about {
+        font-size: 1.5em;
     }
 }
