@@ -12,19 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-    width: 0.5em;
-    background-color: #1b1b1b;
-}
-
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 1px rgba(63, 63, 63, 0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #fff;
-}
-
 body {
     font-size: 1.35rem;
     color: #1b1b1b;
