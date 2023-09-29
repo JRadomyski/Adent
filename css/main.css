@@ -525,7 +525,7 @@ nav ul li, nav ul li a:hover {
 
 .info__box {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 20px;
     font-size: 1.2em;
 }
 
@@ -541,30 +541,6 @@ nav ul li, nav ul li a:hover {
 
 .contact__info > .info__box {
     padding: 30px 0;
-}
-
-.info__button {
-    display: flex;
-    margin: auto;
-    position: relative;
-    padding: 10px 20px;
-    background: none;
-    border: 1px solid #1b1b1b;
-    color: #1b1b1b;
-    font-size: 0.8em;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-a.button {
-    text-decoration: none;
-}
-
-.info__button:hover {
-    color: #fff;
-    border: 1px solid #fff;
-    background-color: #2869bf;
 }
 
 footer {
