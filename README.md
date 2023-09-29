@@ -4,12 +4,10 @@ This repository contains the source code for the Adent-Siedlce project of a dent
 
 ## Technologies
 
-The Adent-Siedlce application is built using the following technologies:
-
-- Frontend: HTML, CSS, JavaScript
+The Adent-Siedlce is built using the most common technologies such as: HTML, CSS, Bootstrap, JavaScript
 
 ## Installation
 1. Clone the repository:
 2. Navigate to the project directory: `cd Adent-Siedlce`
-3. Run `code .` | If you're running VSC
+3. Run `code .` - If you're running VSC
 4. Run it with live-server
