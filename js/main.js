@@ -3,19 +3,26 @@ const menuBtn = document.getElementById("menubtn");
 const sideNav = document.getElementById("sideNav");
 const menu = document.getElementById("menu");
 
-
 sideNav.style.right = "-250px";
 
-
-menuBtn.onclick = function () {
+menuBtn.onclick = function() {
     if (sideNav.style.right == "-250px") {
         sideNav.style.right = "0";
         menu.src = "img/icons/x.svg";
     } else {
         sideNav.style.right = "-250px";
-        menu.src = "img/icons/menu.svg"
+        menu.src = "img/icons/menu.svg";
     }
 }
+
+document.addEventListener('click', function(event) {
+    const isClickInside = sideNav.contains(event.target) || menuBtn.contains(event.target);
+
+    if (!isClickInside && sideNav.style.right === "0px") {
+        sideNav.style.right = "-250px";
+        menu.src = "img/icons/menu.svg";
+    }
+});
 
 const CurrentYear = () => {
     const year = (new Date).getFullYear();
@@ -24,12 +31,12 @@ const CurrentYear = () => {
 
 CurrentYear();
 
-const photo = document.querySelectorAll(".photo img")
-const popUp = document.querySelector(".popup")
-const popUpClose = document.querySelector(".popup__close")
-const popupImg = document.querySelector(".popup__img")
-const arrowLeft = document.querySelector(".popup__arrow--left")
-const arrowRight = document.querySelector(".popup__arrow--right")
+const photo = document.querySelectorAll(".photo img");
+const popUp = document.querySelector(".popup");
+const popUpClose = document.querySelector(".popup__close");
+const popupImg = document.querySelector(".popup__img");
+const arrowLeft = document.querySelector(".popup__arrow--left");
+const arrowRight = document.querySelector(".popup__arrow--right");
 
 let currentImgIndex;
 
@@ -82,9 +89,7 @@ photo.forEach((thumbnail, index) => {
 });
 
 popUpClose.addEventListener("click", closePopup);
-
 arrowRight.addEventListener("click", showNextImg);
-
 arrowLeft.addEventListener("click", showPreviousImg);
 
 document.addEventListener("keydown", (e) => {
