@@ -269,7 +269,7 @@ nav ul li, nav ul li a:hover {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    padding: 100px 30px;
+    padding: 100px 20px;
     color: #fff;
     box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
     font-family: 'Arial', sans-serif;
@@ -302,7 +302,7 @@ nav ul li, nav ul li a:hover {
 
 #about .general-info {
     padding-top: 50px;
-    width: 40%;
+    width: 80%;
     margin: auto;
     text-align: center;
     font-size: 1.1em;
